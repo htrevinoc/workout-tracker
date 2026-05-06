@@ -1,22 +1,58 @@
 {
   "app": {
-    "title": "Workout Tracker",
-    "scaffoldReady": "Scaffold listo. Aun no hay datos cargados.",
-    "nextStep": "Siguiente: corre python scripts/parse_xlsx.py para generar el seed.",
-    "checks": {
-      "title": "Componentes activos"
-    }
+    "title": "Workout Tracker"
   },
   "common": {
     "save": "Guardar",
     "cancel": "Cancelar",
     "delete": "Eliminar",
     "edit": "Editar",
-    "add": "Agregar",
-    "settings": "Ajustes"
+    "add": "Agregar"
   },
   "units": {
     "kg": "kg",
     "lb": "lb"
+  },
+  "nav": {
+    "today": "Hoy",
+    "settings": "Ajustes"
+  },
+  "today": {
+    "weekN": "Semana {{n}}",
+    "rest": {
+      "title": "Dia de descanso",
+      "subtitle": "Domingo. Recupera bien."
+    },
+    "otf": {
+      "title": "Dia de OTF",
+      "subtitle": "Hoy es Orangetheory. El registro detallado llega en una proxima version."
+    },
+    "unknown": {
+      "title": "Sin rutina hoy",
+      "subtitle": "No hay un workout programado para este dia."
+    }
+  },
+  "exercise": {
+    "lastTime": "Ultima vez"
+  },
+  "set": {
+    "reps": "reps",
+    "check": "Marcar set como completado",
+    "uncheck": "Desmarcar set"
+  },
+  "timer": {
+    "pause": "Pausar",
+    "resume": "Reanudar",
+    "skip": "Saltar"
+  },
+  "settings": {
+    "title": "Ajustes",
+    "language": "Idioma",
+    "unit": "Unidad por defecto",
+    "wakeLock": "Pantalla siempre encendida",
+    "vibrate": "Vibracion del timer",
+    "sound": "Sonido del timer",
+    "dataTitle": "Datos",
+    "exportJson": "Exportar JSON"
   }
 }

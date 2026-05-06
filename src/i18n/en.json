@@ -1,22 +1,58 @@
 {
   "app": {
-    "title": "Workout Tracker",
-    "scaffoldReady": "Scaffold ready. No data loaded yet.",
-    "nextStep": "Next: run python scripts/parse_xlsx.py to generate the seed.",
-    "checks": {
-      "title": "Active components"
-    }
+    "title": "Workout Tracker"
   },
   "common": {
     "save": "Save",
     "cancel": "Cancel",
     "delete": "Delete",
     "edit": "Edit",
-    "add": "Add",
-    "settings": "Settings"
+    "add": "Add"
   },
   "units": {
     "kg": "kg",
     "lb": "lb"
+  },
+  "nav": {
+    "today": "Today",
+    "settings": "Settings"
+  },
+  "today": {
+    "weekN": "Week {{n}}",
+    "rest": {
+      "title": "Rest day",
+      "subtitle": "Sunday. Recover well."
+    },
+    "otf": {
+      "title": "OTF day",
+      "subtitle": "Orangetheory today. Detailed logging coming in a future release."
+    },
+    "unknown": {
+      "title": "No routine today",
+      "subtitle": "There is no workout scheduled for this day."
+    }
+  },
+  "exercise": {
+    "lastTime": "Last time"
+  },
+  "set": {
+    "reps": "reps",
+    "check": "Mark set complete",
+    "uncheck": "Unmark set"
+  },
+  "timer": {
+    "pause": "Pause",
+    "resume": "Resume",
+    "skip": "Skip"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "unit": "Default unit",
+    "wakeLock": "Keep screen on",
+    "vibrate": "Timer vibration",
+    "sound": "Timer sound",
+    "dataTitle": "Data",
+    "exportJson": "Export JSON"
   }
 }

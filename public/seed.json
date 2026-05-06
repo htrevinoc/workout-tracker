@@ -1,0 +1,782 @@
+{
+  "meta": {
+    "source_file": "Hypertrophy_Tracker_v2.xlsx",
+    "start_date": "2026-03-23",
+    "weight_initial_kg": 82,
+    "weight_target_kg": 75,
+    "generated_at": "2026-05-06T01:47:18.627141+00:00"
+  },
+  "exercises": [
+    {
+      "id": "1f9af081-1b55-582c-8d5c-5544929b0564",
+      "name_es": "Press de banca",
+      "name_en": "Barbell Bench Press",
+      "muscle_groups": [
+        "chest",
+        "triceps",
+        "shoulders"
+      ],
+      "equipment": "barbell",
+      "default_weight_mode": "barbell",
+      "default_target_reps_min": 6,
+      "default_target_reps_max": 8,
+      "default_rest_seconds": 90,
+      "is_otf": false
+    },
+    {
+      "id": "443c940c-7ae1-5860-b6d2-6bfc6221bd34",
+      "name_es": "Press inclinado con mancuernas",
+      "name_en": "Incline Dumbbell Press",
+      "muscle_groups": [
+        "chest",
+        "shoulders"
+      ],
+      "equipment": "dumbbell",
+      "default_weight_mode": "per_side",
+      "default_target_reps_min": 8,
+      "default_target_reps_max": 10,
+      "default_rest_seconds": 90,
+      "is_otf": false
+    },
+    {
+      "id": "4d8391d2-9d4f-5fdf-af6d-524a50804a92",
+      "name_es": "Press militar sentado con mancuernas",
+      "name_en": "Seated DB Shoulder Press",
+      "muscle_groups": [
+        "chest",
+        "shoulders"
+      ],
+      "equipment": "dumbbell",
+      "default_weight_mode": "per_side",
+      "default_target_reps_min": 8,
+      "default_target_reps_max": 10,
+      "default_rest_seconds": 90,
+      "is_otf": false
+    },
+    {
+      "id": "ca648b18-1a8f-5f04-b9e4-482e20f60c4d",
+      "name_es": "Elevaciones laterales con mancuernas",
+      "name_en": "DB Lateral Raises",
+      "muscle_groups": [
+        "shoulders"
+      ],
+      "equipment": "dumbbell",
+      "default_weight_mode": "per_side",
+      "default_target_reps_min": 12,
+      "default_target_reps_max": 15,
+      "default_rest_seconds": 60,
+      "is_otf": false
+    },
+    {
+      "id": "c4432aff-b43d-57cc-969d-fc86b7230ea5",
+      "name_es": "Extension de triceps sobre la cabeza",
+      "name_en": "DB Tricep Overhead Ext",
+      "muscle_groups": [
+        "triceps"
+      ],
+      "equipment": "dumbbell",
+      "default_weight_mode": "per_side",
+      "default_target_reps_min": 10,
+      "default_target_reps_max": 12,
+      "default_rest_seconds": 60,
+      "is_otf": false
+    },
+    {
+      "id": "bb82dbfc-c3a7-5b5e-82c0-eefaa200ec00",
+      "name_es": "Sentadilla con barra",
+      "name_en": "Barbell Back Squat",
+      "muscle_groups": [
+        "quads",
+        "glutes"
+      ],
+      "equipment": "barbell",
+      "default_weight_mode": "barbell",
+      "default_target_reps_min": 6,
+      "default_target_reps_max": 8,
+      "default_rest_seconds": 90,
+      "is_otf": false
+    },
+    {
+      "id": "d003c623-ffe6-5e44-9002-a2032c1290d0",
+      "name_es": "Peso muerto rumano con barra",
+      "name_en": "Barbell Romanian Deadlift",
+      "muscle_groups": [
+        "hamstrings",
+        "glutes",
+        "back"
+      ],
+      "equipment": "barbell",
+      "default_weight_mode": "barbell",
+      "default_target_reps_min": 8,
+      "default_target_reps_max": 10,
+      "default_rest_seconds": 90,
+      "is_otf": false
+    },
+    {
+      "id": "91c47c67-58bd-5f87-a883-b9aa30761270",
+      "name_es": "Sentadilla bulgara con mancuernas",
+      "name_en": "Bulgarian Split Squat (DB)",
+      "muscle_groups": [
+        "quads",
+        "glutes"
+      ],
+      "equipment": "other",
+      "default_weight_mode": "barbell",
+      "default_target_reps_min": 8,
+      "default_target_reps_max": 10,
+      "default_rest_seconds": 90,
+      "is_otf": false
+    },
+    {
+      "id": "56ec93b1-9909-5eff-9e2a-2a21ec1f549e",
+      "name_es": "Sentadilla goblet con mancuerna",
+      "name_en": "DB Goblet Squat",
+      "muscle_groups": [
+        "quads",
+        "glutes"
+      ],
+      "equipment": "dumbbell",
+      "default_weight_mode": "per_side",
+      "default_target_reps_min": 10,
+      "default_target_reps_max": 12,
+      "default_rest_seconds": 60,
+      "is_otf": false
+    },
+    {
+      "id": "40788bbe-b80d-5118-ba1a-3e11907fb2c9",
+      "name_es": "Elevacion de pantorrilla a una pierna",
+      "name_en": "Single-Leg Calf Raise (DB)",
+      "muscle_groups": [
+        "calves"
+      ],
+      "equipment": "other",
+      "default_weight_mode": "barbell",
+      "default_target_reps_min": 12,
+      "default_target_reps_max": 15,
+      "default_rest_seconds": 60,
+      "is_otf": false
+    },
+    {
+      "id": "6b295c80-5891-5554-873b-9a16adc832a4",
+      "name_es": "Remo inclinado con mancuernas",
+      "name_en": "DB Bent-Over Row",
+      "muscle_groups": [
+        "back",
+        "biceps"
+      ],
+      "equipment": "dumbbell",
+      "default_weight_mode": "per_side",
+      "default_target_reps_min": 6,
+      "default_target_reps_max": 8,
+      "default_rest_seconds": 90,
+      "is_otf": false
+    },
+    {
+      "id": "54252ef3-6abe-5eb9-9b24-548821624b52",
+      "name_es": "Remo a una mano con mancuerna",
+      "name_en": "Single-Arm DB Row",
+      "muscle_groups": [
+        "back",
+        "biceps"
+      ],
+      "equipment": "dumbbell",
+      "default_weight_mode": "per_side",
+      "default_target_reps_min": 8,
+      "default_target_reps_max": 10,
+      "default_rest_seconds": 90,
+      "is_otf": false
+    },
+    {
+      "id": "c2d59eb0-7bb5-5e2a-96b2-65aa819a555c",
+      "name_es": "Pullover con mancuerna",
+      "name_en": "DB Pullover",
+      "muscle_groups": [
+        "back",
+        "chest"
+      ],
+      "equipment": "dumbbell",
+      "default_weight_mode": "per_side",
+      "default_target_reps_min": 10,
+      "default_target_reps_max": 12,
+      "default_rest_seconds": 60,
+      "is_otf": false
+    },
+    {
+      "id": "add68399-e917-51ef-8ef7-872b0e810337",
+      "name_es": "Aperturas inversas inclinadas",
+      "name_en": "Incline Reverse DB Fly",
+      "muscle_groups": [
+        "other"
+      ],
+      "equipment": "dumbbell",
+      "default_weight_mode": "per_side",
+      "default_target_reps_min": 12,
+      "default_target_reps_max": 15,
+      "default_rest_seconds": 60,
+      "is_otf": false
+    },
+    {
+      "id": "534b31b7-d47d-5ea2-b8b8-36ca0de4742f",
+      "name_es": "Curl martillo",
+      "name_en": "DB Hammer Curls",
+      "muscle_groups": [
+        "biceps"
+      ],
+      "equipment": "dumbbell",
+      "default_weight_mode": "per_side",
+      "default_target_reps_min": 8,
+      "default_target_reps_max": 10,
+      "default_rest_seconds": 60,
+      "is_otf": false
+    },
+    {
+      "id": "2ecc049a-b3dd-589b-9476-20710306d707",
+      "name_es": "Curl con barra",
+      "name_en": "Barbell Curl",
+      "muscle_groups": [
+        "biceps"
+      ],
+      "equipment": "barbell",
+      "default_weight_mode": "barbell",
+      "default_target_reps_min": 8,
+      "default_target_reps_max": 10,
+      "default_rest_seconds": 60,
+      "is_otf": false
+    }
+  ],
+  "routines": [
+    {
+      "id": "0a34bc43-e4cc-58eb-81d9-e1dbdd5a17bd",
+      "name_es": "Upper Push",
+      "name_en": "Upper Push",
+      "color": "#ef4444"
+    },
+    {
+      "id": "f237629d-1655-527e-b190-b1c6b1f8ac2c",
+      "name_es": "Lower",
+      "name_en": "Lower",
+      "color": "#22c55e"
+    },
+    {
+      "id": "923c1f93-7ba1-5949-a932-6a58eff0f542",
+      "name_es": "Upper Pull",
+      "name_en": "Upper Pull",
+      "color": "#3b82f6"
+    }
+  ],
+  "routine_exercises": [
+    {
+      "id": "0a6995ac-0c07-5652-a982-c0affea36ee5",
+      "routine_id": "0a34bc43-e4cc-58eb-81d9-e1dbdd5a17bd",
+      "exercise_id": "1f9af081-1b55-582c-8d5c-5544929b0564",
+      "order_in_routine": 0,
+      "target_sets": 3,
+      "target_reps_min": 6,
+      "target_reps_max": 8,
+      "rest_seconds": 90
+    },
+    {
+      "id": "84789c64-33e1-528a-8b24-2998a2223ddc",
+      "routine_id": "0a34bc43-e4cc-58eb-81d9-e1dbdd5a17bd",
+      "exercise_id": "443c940c-7ae1-5860-b6d2-6bfc6221bd34",
+      "order_in_routine": 1,
+      "target_sets": 3,
+      "target_reps_min": 8,
+      "target_reps_max": 10,
+      "rest_seconds": 90
+    },
+    {
+      "id": "5a3da139-c407-5cbe-91ef-90571561e9c5",
+      "routine_id": "0a34bc43-e4cc-58eb-81d9-e1dbdd5a17bd",
+      "exercise_id": "4d8391d2-9d4f-5fdf-af6d-524a50804a92",
+      "order_in_routine": 2,
+      "target_sets": 3,
+      "target_reps_min": 8,
+      "target_reps_max": 10,
+      "rest_seconds": 90
+    },
+    {
+      "id": "4d4fc019-d654-57ca-a039-9869b972ad0d",
+      "routine_id": "0a34bc43-e4cc-58eb-81d9-e1dbdd5a17bd",
+      "exercise_id": "ca648b18-1a8f-5f04-b9e4-482e20f60c4d",
+      "order_in_routine": 3,
+      "target_sets": 3,
+      "target_reps_min": 12,
+      "target_reps_max": 15,
+      "rest_seconds": 60
+    },
+    {
+      "id": "d514e8c2-7d25-591e-b2c6-32bfec95442d",
+      "routine_id": "0a34bc43-e4cc-58eb-81d9-e1dbdd5a17bd",
+      "exercise_id": "c4432aff-b43d-57cc-969d-fc86b7230ea5",
+      "order_in_routine": 4,
+      "target_sets": 3,
+      "target_reps_min": 10,
+      "target_reps_max": 12,
+      "rest_seconds": 60
+    },
+    {
+      "id": "ee1813a3-eff4-55bc-85bb-f45b9bc3b64d",
+      "routine_id": "f237629d-1655-527e-b190-b1c6b1f8ac2c",
+      "exercise_id": "bb82dbfc-c3a7-5b5e-82c0-eefaa200ec00",
+      "order_in_routine": 0,
+      "target_sets": 3,
+      "target_reps_min": 6,
+      "target_reps_max": 8,
+      "rest_seconds": 90
+    },
+    {
+      "id": "ee93287f-b430-55cf-9e18-dfc7d8facb57",
+      "routine_id": "f237629d-1655-527e-b190-b1c6b1f8ac2c",
+      "exercise_id": "d003c623-ffe6-5e44-9002-a2032c1290d0",
+      "order_in_routine": 1,
+      "target_sets": 3,
+      "target_reps_min": 8,
+      "target_reps_max": 10,
+      "rest_seconds": 90
+    },
+    {
+      "id": "ae330e05-6e15-59b8-bde0-dea53750fe3e",
+      "routine_id": "f237629d-1655-527e-b190-b1c6b1f8ac2c",
+      "exercise_id": "91c47c67-58bd-5f87-a883-b9aa30761270",
+      "order_in_routine": 2,
+      "target_sets": 3,
+      "target_reps_min": 8,
+      "target_reps_max": 10,
+      "rest_seconds": 90
+    },
+    {
+      "id": "3ec995c3-e4b8-5d81-b81b-3e1f6755d69e",
+      "routine_id": "f237629d-1655-527e-b190-b1c6b1f8ac2c",
+      "exercise_id": "56ec93b1-9909-5eff-9e2a-2a21ec1f549e",
+      "order_in_routine": 3,
+      "target_sets": 3,
+      "target_reps_min": 10,
+      "target_reps_max": 12,
+      "rest_seconds": 60
+    },
+    {
+      "id": "71ed7140-7181-531c-8534-7042d16a8a89",
+      "routine_id": "f237629d-1655-527e-b190-b1c6b1f8ac2c",
+      "exercise_id": "40788bbe-b80d-5118-ba1a-3e11907fb2c9",
+      "order_in_routine": 4,
+      "target_sets": 3,
+      "target_reps_min": 12,
+      "target_reps_max": 15,
+      "rest_seconds": 60
+    },
+    {
+      "id": "9616a35f-55cd-55d0-bc6c-02d4b84e2620",
+      "routine_id": "923c1f93-7ba1-5949-a932-6a58eff0f542",
+      "exercise_id": "6b295c80-5891-5554-873b-9a16adc832a4",
+      "order_in_routine": 0,
+      "target_sets": 3,
+      "target_reps_min": 6,
+      "target_reps_max": 8,
+      "rest_seconds": 90
+    },
+    {
+      "id": "72aef6fc-7301-5868-ac66-caefa5fc90c4",
+      "routine_id": "923c1f93-7ba1-5949-a932-6a58eff0f542",
+      "exercise_id": "54252ef3-6abe-5eb9-9b24-548821624b52",
+      "order_in_routine": 1,
+      "target_sets": 3,
+      "target_reps_min": 8,
+      "target_reps_max": 10,
+      "rest_seconds": 90
+    },
+    {
+      "id": "454925a8-a8ff-593e-9953-61f891fefcf8",
+      "routine_id": "923c1f93-7ba1-5949-a932-6a58eff0f542",
+      "exercise_id": "c2d59eb0-7bb5-5e2a-96b2-65aa819a555c",
+      "order_in_routine": 2,
+      "target_sets": 3,
+      "target_reps_min": 10,
+      "target_reps_max": 12,
+      "rest_seconds": 60
+    },
+    {
+      "id": "4c4a4642-0d9a-5149-84c4-a138ee8735ac",
+      "routine_id": "923c1f93-7ba1-5949-a932-6a58eff0f542",
+      "exercise_id": "add68399-e917-51ef-8ef7-872b0e810337",
+      "order_in_routine": 3,
+      "target_sets": 3,
+      "target_reps_min": 12,
+      "target_reps_max": 15,
+      "rest_seconds": 60
+    },
+    {
+      "id": "203eec0c-e39d-5219-8232-88fa656c9c40",
+      "routine_id": "923c1f93-7ba1-5949-a932-6a58eff0f542",
+      "exercise_id": "534b31b7-d47d-5ea2-b8b8-36ca0de4742f",
+      "order_in_routine": 4,
+      "target_sets": 3,
+      "target_reps_min": 8,
+      "target_reps_max": 10,
+      "rest_seconds": 60
+    },
+    {
+      "id": "52d03b79-3290-5c8f-a3d6-dc484cf175cf",
+      "routine_id": "923c1f93-7ba1-5949-a932-6a58eff0f542",
+      "exercise_id": "2ecc049a-b3dd-589b-9476-20710306d707",
+      "order_in_routine": 5,
+      "target_sets": 3,
+      "target_reps_min": 8,
+      "target_reps_max": 10,
+      "rest_seconds": 60
+    }
+  ],
+  "sessions": [
+    {
+      "id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "routine_id": "0a34bc43-e4cc-58eb-81d9-e1dbdd5a17bd",
+      "started_at": "2026-03-23T00:00:00",
+      "week_number": 1,
+      "location": "home",
+      "notes": null,
+      "session_rpe": null
+    },
+    {
+      "id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "routine_id": "923c1f93-7ba1-5949-a932-6a58eff0f542",
+      "started_at": "2026-03-27T00:00:00",
+      "week_number": 1,
+      "location": "home",
+      "notes": null,
+      "session_rpe": null
+    }
+  ],
+  "session_sets": [
+    {
+      "id": "3b126c9d-82f0-5916-9f8b-9c3dd225229a",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "1f9af081-1b55-582c-8d5c-5544929b0564",
+      "set_number": 1,
+      "weight_value": 20.0,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "f192a02c-641e-5bf5-860d-b037ae614aed",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "1f9af081-1b55-582c-8d5c-5544929b0564",
+      "set_number": 2,
+      "weight_value": 20.0,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "023321df-1f77-5e59-b1db-67533fc27a50",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "1f9af081-1b55-582c-8d5c-5544929b0564",
+      "set_number": 3,
+      "weight_value": 20.0,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "37d9a331-cae7-5c83-8ad7-610b1a5e2348",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "443c940c-7ae1-5860-b6d2-6bfc6221bd34",
+      "set_number": 1,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "d5fe0f8b-ba1d-5f8a-b23b-c2388bb95c62",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "443c940c-7ae1-5860-b6d2-6bfc6221bd34",
+      "set_number": 2,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "32900930-2cc2-5a6b-a154-28c817f0c3b4",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "443c940c-7ae1-5860-b6d2-6bfc6221bd34",
+      "set_number": 3,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "b469914b-f383-5e03-9456-f856f9e3d6d9",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "4d8391d2-9d4f-5fdf-af6d-524a50804a92",
+      "set_number": 1,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "47cac696-9230-5f5f-a38d-3e61761b6311",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "4d8391d2-9d4f-5fdf-af6d-524a50804a92",
+      "set_number": 2,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "c571cd01-6b59-5b1d-af0e-d2d27017eb0a",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "4d8391d2-9d4f-5fdf-af6d-524a50804a92",
+      "set_number": 3,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "d6784354-2e91-5e9a-b604-4f48627e3bf9",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "ca648b18-1a8f-5f04-b9e4-482e20f60c4d",
+      "set_number": 1,
+      "weight_value": 16.0,
+      "weight_unit": "kg",
+      "weight_mode": "pair_total",
+      "reps": 10,
+      "rpe": null
+    },
+    {
+      "id": "a63b14f8-4edb-5fae-90b0-ef7b0e10ca06",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "ca648b18-1a8f-5f04-b9e4-482e20f60c4d",
+      "set_number": 2,
+      "weight_value": 16.0,
+      "weight_unit": "kg",
+      "weight_mode": "pair_total",
+      "reps": 10,
+      "rpe": null
+    },
+    {
+      "id": "520d12c5-48d1-59d1-80ac-8b14f8b68a2c",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "ca648b18-1a8f-5f04-b9e4-482e20f60c4d",
+      "set_number": 3,
+      "weight_value": 16.0,
+      "weight_unit": "kg",
+      "weight_mode": "pair_total",
+      "reps": 10,
+      "rpe": null
+    },
+    {
+      "id": "a5789bd0-063f-589a-8200-9cf774869a2a",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "c4432aff-b43d-57cc-969d-fc86b7230ea5",
+      "set_number": 1,
+      "weight_value": 30.0,
+      "weight_unit": "kg",
+      "weight_mode": "barbell",
+      "reps": 10,
+      "rpe": null
+    },
+    {
+      "id": "debc617f-0cf6-5f53-aad0-420a79dba1ac",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "c4432aff-b43d-57cc-969d-fc86b7230ea5",
+      "set_number": 2,
+      "weight_value": 30.0,
+      "weight_unit": "kg",
+      "weight_mode": "barbell",
+      "reps": 10,
+      "rpe": null
+    },
+    {
+      "id": "0728aea8-4c79-559f-90da-8ec7781b6f7a",
+      "session_id": "1d449121-a1e5-5028-b547-9eccd570a0bf",
+      "exercise_id": "c4432aff-b43d-57cc-969d-fc86b7230ea5",
+      "set_number": 3,
+      "weight_value": 30.0,
+      "weight_unit": "kg",
+      "weight_mode": "barbell",
+      "reps": 10,
+      "rpe": null
+    },
+    {
+      "id": "37ee0d0d-c82a-50f0-b008-a363eca5e108",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "6b295c80-5891-5554-873b-9a16adc832a4",
+      "set_number": 1,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "351d1a23-472a-5d4f-ba2a-54cf7e969fc5",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "6b295c80-5891-5554-873b-9a16adc832a4",
+      "set_number": 2,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "6093fc60-561f-591b-ad46-994c279558f0",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "6b295c80-5891-5554-873b-9a16adc832a4",
+      "set_number": 3,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "b706aff4-ea9d-5850-a9b6-b95b673bcba6",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "54252ef3-6abe-5eb9-9b24-548821624b52",
+      "set_number": 1,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "4caf1c7c-42bf-5d16-b137-960fb1df2e21",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "54252ef3-6abe-5eb9-9b24-548821624b52",
+      "set_number": 2,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "b8a5a830-4d45-50eb-9038-54c6b59333b5",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "54252ef3-6abe-5eb9-9b24-548821624b52",
+      "set_number": 3,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "ee21d32f-0f83-5f04-a44b-17f9b2b6f769",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "c2d59eb0-7bb5-5e2a-96b2-65aa819a555c",
+      "set_number": 1,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "44d4a1a1-3058-50cd-8b4f-4bd2ce45eb45",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "c2d59eb0-7bb5-5e2a-96b2-65aa819a555c",
+      "set_number": 2,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "b002da20-221e-5995-8d7e-8d7e9924521d",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "c2d59eb0-7bb5-5e2a-96b2-65aa819a555c",
+      "set_number": 3,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "e92c1406-d3a2-5ee7-b9c8-d578e1f1b984",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "add68399-e917-51ef-8ef7-872b0e810337",
+      "set_number": 1,
+      "weight_value": 10.0,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 10,
+      "rpe": null
+    },
+    {
+      "id": "d28e657e-6dfc-5159-a906-46db0cb4499d",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "add68399-e917-51ef-8ef7-872b0e810337",
+      "set_number": 2,
+      "weight_value": 10.0,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 10,
+      "rpe": null
+    },
+    {
+      "id": "b9df8fd7-fea8-5588-b44b-0bf198de797b",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "add68399-e917-51ef-8ef7-872b0e810337",
+      "set_number": 3,
+      "weight_value": 10.0,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 10,
+      "rpe": null
+    },
+    {
+      "id": "20ea6cf8-b576-59c1-981b-3c7635e23196",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "534b31b7-d47d-5ea2-b8b8-36ca0de4742f",
+      "set_number": 1,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "51ea1aaa-4265-5e97-a65e-8c26da078826",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "534b31b7-d47d-5ea2-b8b8-36ca0de4742f",
+      "set_number": 2,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    },
+    {
+      "id": "77b6386a-be08-5b31-aa8c-f9e15748d74e",
+      "session_id": "48b34c08-10ed-5cb6-a9c5-a8b75c588316",
+      "exercise_id": "534b31b7-d47d-5ea2-b8b8-36ca0de4742f",
+      "set_number": 3,
+      "weight_value": 14.5,
+      "weight_unit": "kg",
+      "weight_mode": "per_side",
+      "reps": 8,
+      "rpe": null
+    }
+  ],
+  "bodyweight": []
+}
