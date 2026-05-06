@@ -46,6 +46,16 @@
     "check": "Mark set complete",
     "uncheck": "Unmark set"
   },
+  "weightMode": {
+    "perSide": "/side",
+    "perSideHint": "weight per dumbbell (one in each hand)",
+    "pairTotal": "/pair",
+    "pairTotalHint": "weight summing both dumbbells",
+    "barbell": "total",
+    "barbellHint": "total weight with bar and plates",
+    "bodyweight": "BW",
+    "bodyweightHint": "bodyweight"
+  },
   "timer": {
     "pause": "Pause",
     "resume": "Resume",

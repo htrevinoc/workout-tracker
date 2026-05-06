@@ -46,6 +46,16 @@
     "check": "Marcar set como completado",
     "uncheck": "Desmarcar set"
   },
+  "weightMode": {
+    "perSide": "/lado",
+    "perSideHint": "kg por mancuerna (una en cada mano)",
+    "pairTotal": "/par",
+    "pairTotalHint": "kg sumando las dos mancuernas",
+    "barbell": "total",
+    "barbellHint": "kg totales con barra y discos",
+    "bodyweight": "BW",
+    "bodyweightHint": "peso corporal"
+  },
   "timer": {
     "pause": "Pausar",
     "resume": "Reanudar",
