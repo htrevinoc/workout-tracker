@@ -1,0 +1,25 @@
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Env / secrets (never commit OAuth client_id files, .env, etc.)
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+*.tsbuildinfo
+.vite/
+.tsbuild-node/
+
+# Generated seed (regenerate with scripts/parse_xlsx.py)
+data/seed.json
+
+# Claude memory lives outside the repo
+.claude/

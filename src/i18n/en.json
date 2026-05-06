@@ -1,0 +1,22 @@
+{
+  "app": {
+    "title": "Workout Tracker",
+    "scaffoldReady": "Scaffold ready. No data loaded yet.",
+    "nextStep": "Next: run python scripts/parse_xlsx.py to generate the seed.",
+    "checks": {
+      "title": "Active components"
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "settings": "Settings"
+  },
+  "units": {
+    "kg": "kg",
+    "lb": "lb"
+  }
+}
