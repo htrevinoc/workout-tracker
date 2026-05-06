@@ -17,7 +17,13 @@
     "today": "Today",
     "settings": "Settings"
   },
+  "activity": {
+    "otf": "OTF",
+    "rest": "Rest",
+    "suggested": "suggested"
+  },
   "today": {
+    "title": "Today",
     "weekN": "Week {{n}}",
     "rest": {
       "title": "Rest day",

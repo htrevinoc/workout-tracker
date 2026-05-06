@@ -9,6 +9,7 @@ import { useRestTimer } from "@/lib/timer";
 import { useWakeLock } from "@/lib/wakeLock";
 import { ExerciseCard } from "@/components/ExerciseCard";
 import { RestTimerSheet } from "@/components/RestTimerSheet";
+import { ActivitySelector, type ActivityChoice } from "@/components/ActivitySelector";
 
 export function TodayPage() {
   const { t } = useTranslation();
@@ -34,21 +35,37 @@ export function TodayPage() {
   const wakeLockEnabled = Boolean(settings.wake_lock);
   useWakeLock(wakeLockEnabled);
 
-  const routineToday = useMemo(() => todayRoutine(routines ?? []), [routines]);
+  const suggested: ActivityChoice = useMemo(() => {
+    if (isRestDay()) return { type: "rest" };
+    if (isOTFDay()) return { type: "otf" };
+    const r = todayRoutine(routines ?? []);
+    return r ? { type: "routine", routineId: r.id } : { type: "rest" };
+  }, [routines]);
+
+  const [choice, setChoice] = useState<ActivityChoice | null>(null);
+  useEffect(() => {
+    if (choice === null && (routines?.length ?? 0) > 0) {
+      setChoice(suggested);
+    }
+  }, [choice, suggested, routines]);
+
   const week = meta?.start_date ? programWeek(meta.start_date) : 1;
+
+  const activeRoutine =
+    choice?.type === "routine" ? routines?.find((r) => r.id === choice.routineId) ?? null : null;
 
   const [sessionId, setSessionId] = useState<string | null>(null);
   useEffect(() => {
-    if (!routineToday) {
+    if (!activeRoutine) {
       setSessionId(null);
       return;
     }
-    void getOrCreateTodaySession(routineToday.id, week).then((s) => setSessionId(s.id));
-  }, [routineToday, week]);
+    void getOrCreateTodaySession(activeRoutine.id, week).then((s) => setSessionId(s.id));
+  }, [activeRoutine, week]);
 
   const routineExercises = useLiveQuery(
-    () => (routineToday ? getRoutineExercises(routineToday.id) : Promise.resolve([])),
-    [routineToday?.id],
+    () => (activeRoutine ? getRoutineExercises(activeRoutine.id) : Promise.resolve([])),
+    [activeRoutine?.id],
     []
   );
 
@@ -57,50 +74,50 @@ export function TodayPage() {
     sound: settings.sound !== false,
   });
 
-  if (isRestDay()) {
+  if (!choice) {
     return (
       <PageShell>
-        <Banner emoji="🛌" title={t("today.rest.title")} subtitle={t("today.rest.subtitle")} />
-      </PageShell>
-    );
-  }
-  if (isOTFDay()) {
-    return (
-      <PageShell>
-        <Banner emoji="🔥" title={t("today.otf.title")} subtitle={t("today.otf.subtitle")} />
-      </PageShell>
-    );
-  }
-  if (!routineToday || !sessionId) {
-    return (
-      <PageShell>
-        <Banner emoji="🤔" title={t("today.unknown.title")} subtitle={t("today.unknown.subtitle")} />
+        <p className="text-slate-500">…</p>
       </PageShell>
     );
   }
 
   return (
     <PageShell>
-      <header className="flex items-baseline justify-between">
-        <div>
-          <h2 className="text-xl font-bold leading-tight">{routineToday.name_es}</h2>
-          <p className="text-xs text-slate-500">
-            {t("today.weekN", { n: week })}
-          </p>
+      <header className="flex flex-col gap-2">
+        <div className="flex items-baseline justify-between">
+          <h2 className="text-xl font-bold leading-tight">{t("today.title")}</h2>
+          <p className="text-xs text-slate-500">{t("today.weekN", { n: week })}</p>
         </div>
+        <ActivitySelector
+          routines={routines ?? []}
+          selected={choice}
+          suggested={suggested}
+          onChange={setChoice}
+        />
       </header>
 
-      <div className="flex flex-col gap-3 pb-32">
-        {routineExercises?.map((re) => (
-          <ExerciseCard
-            key={re.id}
-            routineExercise={re}
-            sessionId={sessionId}
-            defaultUnit={defaultUnit}
-            onSetCompleted={(rest) => timer.start(rest)}
-          />
-        ))}
-      </div>
+      {choice.type === "rest" && (
+        <Banner emoji="🛌" title={t("today.rest.title")} subtitle={t("today.rest.subtitle")} />
+      )}
+
+      {choice.type === "otf" && (
+        <Banner emoji="🔥" title={t("today.otf.title")} subtitle={t("today.otf.subtitle")} />
+      )}
+
+      {choice.type === "routine" && activeRoutine && sessionId && (
+        <div className="flex flex-col gap-3 pb-32">
+          {routineExercises?.map((re) => (
+            <ExerciseCard
+              key={re.id}
+              routineExercise={re}
+              sessionId={sessionId}
+              defaultUnit={defaultUnit}
+              onSetCompleted={(rest) => timer.start(rest)}
+            />
+          ))}
+        </div>
+      )}
 
       <RestTimerSheet
         state={timer.state}

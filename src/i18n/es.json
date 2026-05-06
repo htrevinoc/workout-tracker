@@ -17,7 +17,13 @@
     "today": "Hoy",
     "settings": "Ajustes"
   },
+  "activity": {
+    "otf": "OTF",
+    "rest": "Descanso",
+    "suggested": "sugerido"
+  },
   "today": {
+    "title": "Hoy",
     "weekN": "Semana {{n}}",
     "rest": {
       "title": "Dia de descanso",
